@@ -1,0 +1,35 @@
+You're developing a Customer Management System for a small business. The application needs to log various activities like:
+
+Customer registration
+Order processing
+Error messages
+System events
+
+Requirements:
+
+Only ONE log file should be created for the entire application
+All parts of the application (Customer service, Order service, Error handler) should write to the same log file
+Prevent multiple instances of the logger to avoid file conflicts
+The logger should append messages with timestamps
+Log format: [TIMESTAMP] LEVEL: Message
+
+Your Task:
+Create a Logger singleton class with:
+
+LogInfo(string message) - for general information
+LogError(string message) - for error messages
+LogWarning(string message) - for warnings
+
+Test it with:
+
+A CustomerService class that logs customer registration
+An OrderService class that logs order processing
+An ErrorHandler class that logs errors
+
+Example Expected Output:
+[2025-07-24 10:30:15] INFO: Customer John Doe registered
+[2025-07-24 10:30:16] INFO: Order #1001 processed for customer ID: 123
+[2025-07-24 10:30:17] ERROR: Database connection failed
+[2025-07-24 10:30:18] WARNING: Low inventory for product XYZ
+Challenge: Make sure that even if multiple services try to create logger instances, they all use the same logger and write to the same file!
+This is a classic Singleton use case - you want exactly one logger managing one log file across your entire application.
