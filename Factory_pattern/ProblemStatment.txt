@@ -1,0 +1,21 @@
+You're building a Notification System for a company. Depending on the situation, the system needs to send different types of notifications:
+
+EmailNotification
+
+SMSNotification
+
+PushNotification
+
+You want to encapsulate the creation logic for each type of notification using the Factory Method Pattern, so that the main app doesn't directly instantiate the notification classes.
+
+ Objective:
+Define a common interface or abstract class INotification with a method Send(string to, string message).
+
+Create concrete classes for each notification type that implement INotification.
+
+Create an abstract NotificationFactory class with a factory method CreateNotification().
+
+Implement concrete factories: EmailNotificationFactory, SMSNotificationFactory, PushNotificationFactory.
+
+Demonstrate usage in a Main method where the correct factory is chosen and used to send a notification.
+
