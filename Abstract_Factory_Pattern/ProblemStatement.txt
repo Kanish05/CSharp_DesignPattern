@@ -1,0 +1,50 @@
+Problem Statement: Vehicle Manufacturing System
+You work for a company that manufactures vehicles. The company has two manufacturing plants:
+
+Toyota Plant: Makes Toyota cars and motorcycles
+Honda Plant: Makes Honda cars and motorcycles
+
+Requirements:
+
+Products to create:
+
+Car: Should have a StartEngine() method
+Motorcycle: Should have a StartEngine() method
+
+
+Toyota versions:
+
+ToyotaCar: When StartEngine() is called, should print "Toyota Camry engine started with smooth sound"
+ToyotaMotorcycle: When StartEngine() is called, should print "Toyota motorcycle engine started with quiet hum"
+
+
+Honda versions:
+
+HondaCar: When StartEngine() is called, should print "Honda Civic engine started with sporty sound"
+HondaMotorcycle: When StartEngine() is called, should print "Honda CBR engine started with loud roar"
+
+
+Factory requirements:
+
+Create a factory interface that can create both cars and motorcycles
+Create separate factories for Toyota and Honda plants
+Each factory should only create its brand's vehicles
+
+
+Client code:
+
+Create a VehicleShowroom class that takes any factory
+It should have methods to create and display both a car and motorcycle
+In the Main method, demonstrate creating vehicles from both plants
+
+
+
+Your Task:
+Write the complete C# code using the Abstract Factory pattern. The output should look something like:
+=== Toyota Showroom ===
+Toyota Camry engine started with smooth sound
+Toyota motorcycle engine started with quiet hum
+
+=== Honda Showroom ===
+Honda Civic engine started with sporty sound
+Honda CBR engine started with loud roar
