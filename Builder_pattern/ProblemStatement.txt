@@ -1,0 +1,64 @@
+🛠 Problem Statement: Build a Custom PC
+You are tasked with building a PC configuration system. Customers can build different types of PCs: Gaming PC, Office PC, or Budget PC. Each PC can have the following configurable parts:
+
+CPU
+
+RAM
+
+Storage
+
+GPU
+
+Power Supply
+
+Operating System
+
+In addition, for each PC build, you must also generate a Setup Manual that describes the configuration in detail.
+
+🔧 Requirements:
+Implement the Builder pattern to allow constructing:
+
+The PC object (the actual hardware)
+
+The PCManual object (descriptive setup info for users)
+
+Create a Builder interface that defines methods to set:
+
+CPU
+
+RAM
+
+Storage
+
+GPU
+
+Power Supply
+
+OS
+
+Create two concrete builders:
+
+PCBuilder → builds the physical PC object.
+
+PCManualBuilder → builds the PCManual object.
+
+Create a Director class with methods to construct:
+
+BuildGamingPC()
+
+BuildOfficePC()
+
+BuildBudgetPC()
+
+The Client code should:
+
+Use the director to build both a PC and its matching Manual
+
+Display the final objects using ToString() for both
+
+🧪 Bonus (if you want an extra challenge):
+Allow optional GPU (for Budget PC)
+
+After building, the PC object should be immutable
+
+Manual should describe each part in detail (e.g., "CPU: Intel i9, suitable for heavy gaming.")
