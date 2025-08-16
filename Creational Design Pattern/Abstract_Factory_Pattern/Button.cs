@@ -1,6 +1,7 @@
 using System;
 
-// ----- Abstract Product Interfaces -----
+// ----- Abstract Product Interfaces --
+
 public interface IButton
 {
     void Render();
