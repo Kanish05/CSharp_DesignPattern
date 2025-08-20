@@ -159,7 +159,7 @@ public class Program
         // Show that we can treat individual files and folders the same way
         List<FileSystemComponent> components = new List<FileSystemComponent>
         {
-            file1,           // Individual file
+            file1,           // Individual files
             picturesFolder,  // Folder with contents
             videosFolder     // Another folder //
         };
