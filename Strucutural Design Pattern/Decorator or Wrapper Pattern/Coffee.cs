@@ -2,7 +2,7 @@
 Think of a coffee shop:
 You buy a basic coffee ☕, and then you can decorate it with milk 🥛, sugar 🍬, or whipped cream 🍦.
 
-The coffee stays the same, but you enhance it with extra features
+The coffee stays the same, but you enhance it with extra features...
 
 🔧 Intent of Decorator Pattern:
 Add additional behavior to objects at runtime.
