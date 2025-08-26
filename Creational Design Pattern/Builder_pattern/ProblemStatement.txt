@@ -59,6 +59,6 @@ Display the final objects using ToString() for both
 🧪 Bonus (if you want an extra challenge):
 Allow optional GPU (for Budget PC)
 
-After building, the PC object should be immutable..
+After building, the PC object should be immutable..,
 
 Manual should describe each part in detail (e.g., "CPU: Intel i9, suitable for heavy gaming.")..
